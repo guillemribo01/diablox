@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DiabloX</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="shortcut icon" type="image/png" href="img/logo-icona.png">
+    <link rel="stylesheet" href="swiper-bundle.min.css">
+    <script src="https://kit.fontawesome.com/c5cc2f14a2.js" crossorigin="anonymous"></script>
+    <script src="https://www.youtube.com/iframe_api"></script>
+    <script  defer  src="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/index.js"></script>
+    <link  rel="stylesheet"  href="https://cdn.jsdelivr.net/npm/img-comparison-slider@8/dist/styles.css"
+/>
+
+</head>
+<header>
+
+    
+    <div id="nav" class="logo invisible">
+        <img src="img/logo-sencer.png" alt="">
+    </div>
+
+
+    <div class="video-container"><div id="player"></div></div>
+    
+<!-- AQUEST ÉS EL BO
+    <div class="video-container">
+        <iframe id="youtube-video" frameborder="0" allow="autoplay;" src="https://www.youtube.com/embed/PccBcNGrwcs?loop=1;enablejsapi=1&amp;disablekb=1&amp;controls=0&amp;rel=0&amp;iv_load_policy=3&amp;cc_load_policy=0&amp;playsinline=1&amp;showinfo=0&amp;modestbranding=1&amp;fs=0&amp;origin=https://puig.tv&amp;mute=1&amp;autoplay=1&amp;loop=1&amp;playlist=PccBcNGrwcs"  style="opacity: 1;" title="DiabloX"></iframe>
+    </div>
+-->
+</header>
+<body>
+
+    <div class="buttons-flex">
+        <button id="audioButton" onclick="toggleSound">PLAY AUDIO <i class="fa-solid fa-volume-high"></i></button>
+        <a target="_blank" href="https://www.youtube.com/watch?v=PccBcNGrwcs"><button>WATCH ON YOUTUBE <i class="fa-brands fa-youtube"></i></button></a>
+    </div>
+
+    <div class="titol1">
+        <h1 id="titol1">DISCOVER THE</h1>
+        <img src="img/logo-diablox-allargat.png" alt="logo DiabloX">
+    </div>
+
+    <p id="text-inici">PUIG HI TECH PARTS goes one step beyond with the design of this concept motorcycle, the
+        DiabloX which is an evolution of Diablo, the naked+ bike designed as an exercise of design
+        freedom and as a test of what we are capable of achieving designwise.</p>
+
+   
+
+    <!--<div class="scroll">
+        <a href="#seccio-app"><img src="img/scroll-down.png" alt=""></a>
+    </div>-->
+
+    <div id="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h1 id="partName"></h1>
+                <img id="closeIc" src="img/closeIcon.png" alt="">
+            </div>
+            <div class="modal-description">
+                <p id="partDesc"></p>
+                <div id="videoPart">
+                    <iframe id="youtube-video2" frameborder="0" allow="autoplay;" src="https://www.youtube.com/embed/PccBcNGrwcs?loop=1;enablejsapi=1&amp;disablekb=1&amp;controls=0&amp;rel=0&amp;iv_load_policy=3&amp;cc_load_policy=0&amp;playsinline=1&amp;showinfo=0&amp;modestbranding=1&amp;fs=0&amp;origin=https://puig.tv&amp;mute=1&amp;autoplay=1&amp;loop=1&amp;playlist=PccBcNGrwcs"  style="opacity: 1;" title="DiabloX"></iframe>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <section id="seccio-app"></section>
+    <p id="tap-text">Tap a button to display information</p>
+        <div class="app-container">
+            <img src="img/DiabloX-render-punts.webp" id="moto">
+            <div class="circle c1 pulse">
+                <div class="tooltip-toggle">1</div>
+
+            </div>
+            <div class="circle c2 pulse">
+                <div class="tooltip-toggle">2</div>
+
+            </div>
+            <div class="circle c3 pulse">
+                <div class="tooltip-toggle">3</div>
+
+            </div>
+
+            <div class="circle c4 pulse">
+                <div class="tooltip-toggle">4</div>
+
+            </div>
+            <div class="circle c5 pulse">
+                <div class="tooltip-toggle">5</div>
+
+            </div>
+            <div class="circle c6 pulse">
+                <div class="tooltip-toggle">6</div>
+
+            </div>
+        </div>
+    </section>
+
+    <section id="parts-moto">
+        <div class="part-moto-fila">
+            <div id="1" class="contingut-part-moto">
+                <h3>SMART LIGHTING</h3>
+                <img class="img-part-moto" src="img/parts-moto/1-smart-lighting.webp">
+            </div>
+            <div id="2" class="contingut-part-moto">
+                <h3>ELECTRONIC SCREEN</h3>
+                <img class="img-part-moto" src="img/parts-moto/2-electronic-screen.webp" alt="">
+            </div>
+        </div>
+
+        <div class="part-moto-fila">
+            <div id="5" class="contingut-part-moto">
+                <h3>SMART WINGLETS</h3>
+                <img class="img-part-moto" src="img/parts-moto/3-smart-winglets.webp" alt="">
+            </div>
+            <div id="4" class="contingut-part-moto">
+                <h3>BRAKE COOLER</h3>
+                <img class="img-part-moto" src="img/parts-moto/4-brake-cooler.webp" alt="">
+            </div>
+        </div>
+
+        <div class="part-moto-fila">
+            <div id="3" class="contingut-part-moto">
+                <h3>REAR SEAT COWL</h3>
+                <img class="img-part-moto" src="img/parts-moto/5-rear-seat-cowl.webp" alt="">
+            </div>
+            <div id="6" class="contingut-part-moto">
+                <h3>LENTICULAR RIM</h3>
+                <img class="img-part-moto" src="img/parts-moto/6-lenticular.webp" alt="">
+            </div>
+        </div>
+        
+        
+    </section>
+
+    <p id="text-comparator">Diablo X is a naked concept bike that flows to the future, its smart and electronic parts, that
+        are multi-functional and adaptable, bring new possibilities and capabilities to everyday
+        motorcycles, hoping to improve its rideability, performance and overall comfort to the rider.</p>
+
+    <h2>DIABLOX COMPARATOR</h2>
+
+    <div class="buttons-switch-flex">
+        <div class="border-switch">
+            <button id="switch-mt09" >MT09 VS DIABLOX</button>
+            <button id="switch-diablo">DIABLO VS DIABLOX</button>
+        </div>
+    </div>
+
+    <section id="image-comparator">
+        <img-comparison-slider>
+            <img class="content-image" slot="first" src="img/mt09-fons.webp" />
+            <img class="content-image" slot="second" src="img/diablox-fons.webp" />
+        </img-comparison-slider>
+   
+    </section>
+
+    <h2>HIGH TECH PARTS</h2>
+
+    <section id="slider">
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <div class="card">
+                        <h3>FRONTAL WINGLETS</h3>
+                        <div class="text-slider">
+                            <img src="img/the-parts/alero-frontal-naked.webp" alt="">
+                            <p>Design followed by function which is <span class="bold">to increase the downforce of the front axle
+                            </span> of the
+                                motorbike and <span class="bold">improve the coefficient of aerodynamic penetration</span>, being the first part of the
+                                motorcycle to impact with the air.
+                                This downforce will provide an anti-wheelie effect, more stability when braking, anti-shimmie,
+                                and more stability at high speeds.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="card">
+                        <h3>LEVER PROTECTORS – REARVIEW MIRRORS</h3>
+                        <div class="text-slider">
+                            <img src="img/the-parts/llum-front.webp" alt="">
+                            <p>A new product we designed for this amazing Naked+ bike is a <span class="bold">multifunctional</span> one, <span class="bold">a lever
+                                protector that also works as a rearview mirror</span>.
+                                Made in machined aluminium, this part has a lower position that works as a lever protector,
+                                <span class="bold">with an aero-wing shape that will cut the air in a clean manner</span>, like an airplane wing does.
+                                And the upper position allows us to rotate the wing and <span class="bold">we discover a mirror underneath</span> that
+                                <span class="bold">can be regulated to the exact position</span> needed.
+                                </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="card">
+                        <h3>ENGINE SPOILER</h3>
+                        <div class="text-slider">
+                            <img src="img/the-parts/quilla.webp" alt="">
+                            <p>The Diablo deserved an engine spoiler that completed and gave <span class="bold">an optimal aerodynamic
+                                volume to the engine &amp; surrounding components</span>.
+                                With the addition of this <span class="bold">new texture</span>, we achieve to <span class="bold">accelerate the air that flows between
+                                the bike and the ground</span>, and by doing so the pressure will decreases, and this will translate
+                                into <span class="bold">more vertical load</span> for the motorcycle.
+                                </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="card">
+                        <h3>REAR SPOILER</h3>
+                        <div class="text-slider">
+                            <img src="img/the-parts/alero-infer.webp" alt="">
+                            <p>The new DiabloX incorporates this spoiler right before the rear tyre. Its main function is <span class="bold">to
+                                create vertical load directly on the swingarm</span>, not the chassis. The rotation of the tire
+                                generates an additional load by spinning air closer to the tire, right against this spoiler.
+                                <span class="bold">Creating also downforce on the rear axle of the motocycle</span>, thus balancing the bikes charges.                              
+                                </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="card">
+                        <h3>SIDE COVERS</h3>
+                        <div class="text-slider">
+                            <img src="img/the-parts/tapes-later.webp" alt="">
+                            <p>The new side covers have achieved a new style based on aerodynamics and air flowing. With a
+                                <span class="bold">softer and aerodynamically optimized design</span>, also following the motorcycles existing design
+                                lines and the rear seat cowl forms.
+                                They allow the regulation of the rear suspension without having to be removed to do so.                                                     
+                                </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-slide">
+                    <div class="card">
+                        <h3>NEW SEAT DESIGN</h3>
+                        <div class="text-slider">
+                            <img src="img/the-parts/seient-colin.webp" alt="">
+                            <p>In collaboration with Luimoto, we designed this special edition seat design that completes the
+                                amazing look of this concept motorbike. With an engraved DiabloX logo and different textures,
+                                it becomes a special part of the concept design.                                                  
+                                </p>
+                        </div>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </section>
+
+    <h2>GALLERY</h2>
+
+    <section id="galeria">
+        <div class="galeria-container">
+            <div class="galeria-imatge"><img src="img/parts-moto/1-smart-lighting.webp" alt=""></div>
+            <div class="galeria-imatge"><img src="img/parts-moto/2-electronic-screen.webp" alt=""></div>
+            <div class="galeria-imatge"><img src="img/parts-moto/3-smart-winglets.webp" alt=""></div>
+            <div class="galeria-imatge"><img src="img/parts-moto/4-brake-cooler.webp" alt=""></div>
+            <div class="galeria-imatge"><img src="img/parts-moto/5-rear-seat-cowl.webp" alt=""></div>
+            <div class="galeria-imatge"><img src="img/parts-moto/6-lenticular.webp" alt=""></div>
+        </div>
+    </section>
+
+    <h2>THE PROJECT</h2>
+
+    <section id="project">
+
+        <iframe src="https://drive.google.com/file/d/1QKWf8IuQa4ypGJ_gBhx06jGa3xiVGiLN/preview" width="1000px" height="600px" frameborder="0"></iframe>
+
+    </section>
+
+
+</body>
+
+<footer>
+    <section id="logos">
+        <div class="logos-content">
+            <h2>PARTNERS</h2>
+            <div class="fila-logos">
+                <a target="_blank" href="https://luimoto.com"><img id="luimoto" src="img/logos-colaboradors/luimoto.avif" alt=""></a>
+                <a target="_blank" href="https://fastdesign.es"><img id="fastdesign" src="img/logos-colaboradors/fastdesign.png" alt=""></a>
+                <a target="_blank" href="https://uniracing.es"><img id="unracing" src="img/logos-colaboradors/uniracing.png" alt=""></a>
+                <a target="_blank" href="https://motocard.com"><img id="mtc" src="img/logos-colaboradors/mtc.png" alt=""></a>
+            </div>
+        </div>
+        <div class="logos-content">
+            <h2>& THANKS TO</h2>
+            <div class="fila-logos">
+                <div class="columna-logos">
+                    <img id="pasfoto" src="img/logos-colaboradors/pasfoto.JPG" alt="">
+                    <p>PHOTOGRAPHY</p>
+                </div>
+                <div class="columna-logos">
+                    <img id="jlm" src="img/logos-colaboradors/jlm.png" alt="">
+                    <p>3D PRINTING</p>
+                </div>
+                <div class="columna-logos">
+                    <a target="_blank" href="https://pirelli.com"><img id="pirelli" src="img/logos-colaboradors/pirelli.png" alt=""></a>
+                    <p>TYRES</p>
+                </div>
+                <div class="columna-logos">
+                    <a target="_blank" href="https://jom.es"><img id="jom" src="img/logos-colaboradors/jom.png" alt=""></a>
+                    <p>METAL WORKS</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <a target="_blank" href="https://puig.tv"><img id="puig" src="img/logos-colaboradors/puig.png" alt=""></a>
+    <p>Puig Hi Tech Parts 2023</p>
+    <p>Developed by Guillem Ribó</p>
+</footer>
+
+</html>
+
+<script src="script.js"></script>
+<script src="info.js"></script>
+<script src="functionsDiablo.js"></script>
+<script src="swiper-bundle.min.js"></script>
+
+<script>
+
+  var swiper = new Swiper(".mySwiper", {
+    lazy: true,
+    loop: true,
+    grabCursor: true,
+    fade: true,
+    slidesPerView: 1,
+    slidesPerGroup: 1,
+    pagination: {
+        el: ".swiper-pagination",
+        clickable: true,
+      },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+});
+
+
+
+</script>
