@@ -734,6 +734,10 @@ footer section{
     justify-content: center;
 }
 
+#project iframe {
+    height: 600px;
+}
+
 @media (max-width: 768px) {
 
     .video-container {
@@ -990,4 +994,8 @@ footer section{
         width: calc(100vw - 20px);
         height: calc(100vh / 3 - 20px);
     }
+
+    #project iframe {
+    height: 290px;
+}
 }
